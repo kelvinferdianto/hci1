@@ -1,0 +1,414 @@
+/* Add a black background color to the top navigation */
+
+.topnav {
+	background-color: greenyellow;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+
+.topnav-right {
+	float: right;
+	color: white;
+}
+
+.pre-register {
+	color: white;
+	text-align: right;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	background-color: #333;
+}
+
+.bg {
+	/* Full height */
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h3 {
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	text-align: left;
+	color: white;
+}
+
+h1 {
+	color: white;
+	text-align: left;
+}
+
+.container {
+	text-align: center;
+}
+
+.title_container {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.main_container {
+	width: 100%;
+	height: auto;
+	margin-right: 17.5%;
+	margin-left: 17.5%;
+	margin-top: 2.5%;
+	margin-bottom: 5%;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.picture_container {
+	height: auto;
+	width: 40%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.text_container {
+	height: auto;
+	width: 21.67%;
+	float: left;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+#button {
+	display: block;
+	width: 150px;
+	margin: 16px auto;
+	padding: 15px 15px;
+	text-align: center;
+	background: greenyellow;
+	font-size: 20px;
+	font-family: 'Arial', sans-serif;
+	color: #ffffff;
+	white-space: nowrap;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#button:active {
+	vertical-align: top;
+	padding: 8px 13px 6px;
+}
+
+.one a {
+	text-decoration: none;
+}
+
+.footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: greenyellow;
+	color: white;
+	text-align: center;
+	padding: 8px 8px;
+}
+
+.foot {
+	display: inline-block;
+	line-height: 70px;
+	vertical-align: top
+}
+
+.img {
+	display: inline-block;
+}
+
+.slider {
+	border: 10px solid #efefef;
+	position: relative;
+	overflow: hidden;
+	background: #efefef;
+}
+
+.slider {
+	margin: 10px auto;
+	width: 800px;
+	height: 450px;
+}
+
+.isi-slider img {
+	width: 800px;
+	height: 450px;
+}
+
+.isi-slider {
+	position: absolute;
+	width: 3573px;
+	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+	animation-name: slider;
+	animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: slider;
+	-webkit-animation-duration: 12s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
+
+.isi-slider:hover {
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+.isi-slider img {
+	float: left;
+}
+
+.slider:after {
+	font-size: 150px;
+	position: absolute;
+	z-index: 12;
+	color: rgba(255, 255, 255, 0);
+	left: 300px;
+	top: 80px;
+	-webkit-transition: 1s all ease-in-out;
+	-moz-transition: 1s all ease-in-out;
+	transition: 1s all ease-in-out;
+}
+
+.slider:hover:after {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/*Ubah bagian ini yang pixelnya sesuain sama gambar biar transisinya pas ga kepotong gamabrnya*/
+
+@-moz-keyframes slider {
+	0% {
+		left: 0;
+		opacity: 0;
+	}
+	2% {
+		opacity: 1;
+	}
+	20% {
+		left: 0;
+		opacity: 1;
+	}
+	21% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0;
+	}
+	25% {
+		left: -1191px;
+		opacity: 1;
+	}
+	45% {
+		left: -1191px;
+		opacity: 1;
+	}
+	46% {
+		opacity: 0;
+	}
+	48% {
+		opacity: 0;
+	}
+	50% {
+		left: -1536px;
+		opacity: 1;
+	}
+	70% {
+		left: -1536px;
+		opacity: 1;
+	}
+	72% {
+		opacity: 0;
+	}
+	74% {
+		opacity: 0;
+	}
+	75% {
+		left: -2304px;
+		opacity: 1;
+	}
+	95% {
+		left: -2304px;
+		opacity: 1;
+	}
+	97% {
+		left: -2304px;
+		opacity: 0;
+	}
+	100% {
+		left: 0;
+		opacity: 0;
+	}
+}
+
+/*Sama ini juga*/
+
+@-webkit-keyframes slider {
+	0% {
+		left: 0;
+		opacity: 0;
+	}
+	2% {
+		opacity: 1;
+	}
+	20% {
+		left: 0;
+		opacity: 1;
+	}
+	21% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0;
+	}
+	25% {
+		left: -1191px;
+		opacity: 1;
+	}
+	45% {
+		left: -1191px;
+		opacity: 1;
+	}
+	46% {
+		opacity: 0;
+	}
+	48% {
+		opacity: 0;
+	}
+	50% {
+		left: -1536px;
+		opacity: 1;
+	}
+	70% {
+		left: -1536px;
+		opacity: 1;
+	}
+	72% {
+		opacity: 0;
+	}
+	74% {
+		opacity: 0;
+	}
+	75% {
+		left: -2304px;
+		opacity: 1;
+	}
+	95% {
+		left: -2304px;
+		opacity: 1;
+	}
+	97% {
+		left: -2304px;
+		opacity: 0;
+	}
+	100% {
+		left: 0;
+		opacity: 0;
+	}
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+		opacity: 0;
+	}
+	2% {
+		opacity: 1;
+	}
+	20% {
+		left: 0;
+		opacity: 1;
+	}
+	21% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0;
+	}
+	25% {
+		left: -1191px;
+		opacity: 1;
+	}
+	45% {
+		left: -1191px;
+		opacity: 1;
+	}
+	46% {
+		opacity: 0;
+	}
+	48% {
+		opacity: 0;
+	}
+	50% {
+		left: -1536px;
+		opacity: 1;
+	}
+	70% {
+		left: -1536px;
+		opacity: 1;
+	}
+	72% {
+		opacity: 0;
+	}
+	74% {
+		opacity: 0;
+	}
+	75% {
+		left: -2304px;
+		opacity: 1;
+	}
+	95% {
+		left: -2304px;
+		opacity: 1;
+	}
+	97% {
+		left: -2304px;
+		opacity: 0;
+	}
+	100% {
+		left: 0;
+		opacity: 0;
+	}
+}
